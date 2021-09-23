@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main(void)
+{
+  float const Pi = 3.1415;
+  float R, a, b, Vb; 
+  printf("Enter radius:\n");
+  scanf("%f", &R);    // запрашиваем радиус у пользователя
+  
+  a = 2 * Pi * R; // вычисляем длину окружности
+  b = Pi * R * R; // вычисляем площадь курга
+  Vb = (4 / 3) * Pi * R * R * R;     // вычисляем обем шара
+  
+  printf(" Circumference of the circle: %.3f\n", a);   // выводим длину окружности 
+  printf(" The area of the circle: %.3f\n", b);     // выводим площадь курга
+  printf(" Volume of the ball: %.3f\n", Vb);      // выводим обем шара
+  
+  }
+  
