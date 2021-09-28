@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main(void)
+{
+	unsigned int a;
+	int b, result;
+	
+	printf("Enter number and shift value:\n");
+	scanf("%d%d", &a, &b);
+	if(b > 0) {
+	result = a >> b;
+	printf("Input: 0x%X shift right %d\nResult 0x%X", a, b, result);
+	} else if(b < 0) {
+	result = a << (b * -1);
+	printf("Input: 0x%X shift left %d\nResult: 0x%X", a, (b *-1), result);
+	} else {
+	printf("Zero shift is not defined");
+	}
+return 0;
+}
